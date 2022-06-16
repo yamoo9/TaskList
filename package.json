@@ -1,0 +1,32 @@
+{
+  "name": "tasklist",
+  "version": "1.0.0",
+  "description": "TaskList 애플리케이션 디자인 → 개발 워크플로우",
+  "private": true,
+  "scripts": {
+    "theme:create": "run-p global light dark",
+    "theme:delete": "rimraf -rf theme",
+    "global": "token-transformer data/tokens.json theme/global.json global",
+    "light": "token-transformer data/tokens.json theme/light.json global,light global",
+    "dark": "token-transformer data/tokens.json theme/dark.json global,dark global"
+  },
+  "devDependencies": {
+    "token-transformer": "0.0.23",
+    "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamoo9/TaskList.git"
+  },
+  "keywords": [
+    "figma",
+    "tokens"
+  ],
+  "author": "yamoo9 <yamoo9@euid.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamoo9/TaskList/issues"
+  },
+  "homepage": "https://github.com/yamoo9/TaskList#readme"
+}
