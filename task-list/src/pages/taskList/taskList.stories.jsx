@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { screen, userEvent } from '@storybook/testing-library';
-import { hideNoControlWarning, designFigma, delay } from '@/utils';
+import { hideNoControlWarning, designFigma } from '@/utils';
 import TaskListPage from './taskList';
 
 export default {

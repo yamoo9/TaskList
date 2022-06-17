@@ -1,4 +1,4 @@
-import { css } from '@emotion/react';
+import { css, ThemeProvider } from '@emotion/react';
 import { useState, useMemo } from 'react';
 import { TaskBoxProvider } from '@/contexts';
 import { LayoutBase } from '@/pages';
@@ -14,6 +14,9 @@ export default function TaskListPage(props) {
     data: items,
     setData: setItems,
   } = useFetch('/api/taskList.json');
+
+  const [currentTheme, setCurrentTheme] = useState('light');
+  const { data: theme } = useFetch(`/api/theme/${currentTheme}.json`);
 
   /* ------------------------------------------------------------------------ */
 
@@ -60,18 +63,61 @@ export default function TaskListPage(props) {
   );
 
   return (
-    <TaskBoxProvider value={value}>
-      <LayoutBase headerProps={headerProp} {...props}>
-        <TaskList
+    <ThemeProvider theme={theme ?? {}}>
+      <TaskBoxProvider value={value}>
+        <LayoutBase headerProps={headerProp} {...props}>
+          <TaskList
+            css={css`
+              padding: 20px;
+            `}
+            loading={loading}
+            error={error}
+            items={items}
+            visibleArchived={visibleArchived}
+          />
+        </LayoutBase>
+        <div
           css={css`
-            padding: 20px;
+            position: fixed;
+            top: 30px;
+            right: 30px;
           `}
-          loading={loading}
-          error={error}
-          items={items}
-          visibleArchived={visibleArchived}
-        />
-      </LayoutBase>
-    </TaskBoxProvider>
+        >
+          <button
+            css={css`
+              cursor: pointer;
+              border: 0;
+              border-radius: 4px;
+              padding: 0.82em 0.96em;
+              &:hover {
+                background: ${theme?.primary[700].value};
+                color: ${theme?.primary[100].value};
+              }
+            `}
+            onClick={() =>
+              setCurrentTheme(currentTheme.includes('light') ? 'dark' : 'light')
+            }
+          >
+            change theme
+          </button>
+          <div
+            css={css`
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 88px;
+              height: 88px;
+              margin: 20px auto 0;
+              border-radius: 50%;
+              background: ${theme?.primary[500].value};
+              color: ${theme?.bg.default.value};
+              text-transform: uppercase;
+            `}
+          >
+            {currentTheme}
+          </div>
+        </div>
+      </TaskBoxProvider>
+    </ThemeProvider>
   );
 }
