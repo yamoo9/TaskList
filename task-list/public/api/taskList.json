@@ -1,0 +1,46 @@
+[
+  {
+    "id": "task-dkw",
+    "headline": "React Hooks 학습",
+    "description": "React 함수 컴포넌트 훅 정리",
+    "pinned": false,
+    "archived": false,
+    "auther": {
+      "avatar": "/api/faces/woman/05.jpg",
+      "name": "최상희"
+    }
+  },
+  {
+    "id": "task-ioc",
+    "headline": "Emotion 라이브러리 학습",
+    "description": "CSS in JS 라이브러리인 Emotion과 styled-components를 비교하면서 스타일 컴포넌트에 대한 정리",
+    "pinned": false,
+    "archived": false,
+    "auther": {
+      "avatar": "/api/faces/woman/04.jpg",
+      "name": "박새롬"
+    }
+  },
+  {
+    "id": "task-qpw",
+    "headline": "Storybook 라이브러리 학습",
+    "description": "컴포넌트 주도 개발 방법론 정리 😃",
+    "pinned": false,
+    "archived": false,
+    "auther": {
+      "avatar": "/api/faces/man/03.jpg",
+      "name": "박현수"
+    }
+  },
+  {
+    "id": "task-iwv",
+    "headline": "Stateless 컴포넌트 학습",
+    "description": "전달 받는 Props를 통해 렌더링 되는 함수 컴포넌트 활용 방법 정리",
+    "pinned": false,
+    "archived": false,
+    "auther": {
+      "avatar": "/api/faces/man/01.jpg",
+      "name": "강찬"
+    }
+  }
+]
