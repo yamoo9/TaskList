@@ -4,16 +4,19 @@
   "description": "TaskList 애플리케이션 디자인 → 개발 워크플로우",
   "private": true,
   "scripts": {
-    "theme:create": "run-p global light dark",
-    "theme:delete": "rimraf -rf theme",
+    "theme:token": "run-p global light dark",
+    "theme:create": "node theme-build.js",
+    "theme:delete": "rimraf -rf theme/css theme/scss theme/js",
+    "theme:delete-all": "rimraf -rf theme",
     "global": "token-transformer data/tokens.json theme/global.json global",
     "light": "token-transformer data/tokens.json theme/light.json global,light global",
     "dark": "token-transformer data/tokens.json theme/dark.json global,dark global"
   },
   "devDependencies": {
-    "token-transformer": "0.0.23",
     "npm-run-all": "4.1.5",
-    "rimraf": "3.0.2"
+    "rimraf": "3.0.2",
+    "style-dictionary": "3.7.1",
+    "token-transformer": "0.0.23"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,9 @@
   },
   "keywords": [
     "figma",
-    "tokens"
+    "tokens",
+    "token-transformer",
+    "style-dictionary"
   ],
   "author": "yamoo9 <yamoo9@euid.dev>",
   "license": "ISC",

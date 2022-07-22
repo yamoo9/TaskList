@@ -27,9 +27,12 @@ jobs:
       - name: Install Dependencies
         run: npm i
       # step 3. 테마 JSON 생성(변환)
-      - name: Create Theme
+      - name: Create Theme Token
+        run: npm run theme:token
+      # step 4. 테마 CSS, SCSS, JS 생성(변환)
+      - name: Create Theme Resources
         run: npm run theme:create
-      # step 4. 변경사항 커밋
+      # step 5. 변경사항 커밋
       - name: Commit changes
         # 사용법 참고: https://github.com/EndBug/add-and-commit
         uses: EndBug/add-and-commit@v9
