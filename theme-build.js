@@ -58,7 +58,7 @@ const setCSS = (theme) => ({
     {
       destination: `css/${theme}.css`,
       format: 'css/variables',
-      selector: `.${theme}-theme`,
+      selector: theme.includes('global') ? ':root' : `.${theme}-theme`,
     },
   ],
 });
