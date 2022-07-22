@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 22 Jul 2022 03:14:30 GMT
+ * Generated on Fri, 22 Jul 2022 11:13:47 GMT
  */
 
 export const ColorsWhite = "#ffffff";
@@ -27,7 +27,7 @@ export const ColorsYellow100 = "#fef1cf";
 export const ColorsYellow200 = "#fee39e";
 export const ColorsYellow300 = "#fdd56e";
 export const ColorsYellow400 = "#fcc73d";
-export const ColorsYellow500 = "#fcb90d";
+export const ColorsYellow500 = "#ffd117";
 export const ColorsYellow600 = "#c9940a";
 export const ColorsYellow700 = "#976f08";
 export const ColorsYellow800 = "#654a05";

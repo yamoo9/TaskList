@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 22 Jul 2022 03:14:30 GMT
+ * Generated on Fri, 22 Jul 2022 11:13:47 GMT
  */
 
 export const Fg100 = "#efefef";
@@ -11,7 +11,7 @@ export const Primary100 = "#fef1cf";
 export const Primary200 = "#fee39e";
 export const Primary300 = "#fdd56e";
 export const Primary400 = "#fcc73d";
-export const Primary500 = "#fcb90d";
+export const Primary500 = "#ffd117";
 export const Primary600 = "#c9940a";
 export const Primary700 = "#976f08";
 export const Primary800 = "#654a05";

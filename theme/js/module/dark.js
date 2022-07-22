@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 22 Jul 2022 03:14:30 GMT
+ * Generated on Fri, 22 Jul 2022 11:13:47 GMT
  */
 
 module.exports = {
@@ -17,7 +17,7 @@ module.exports = {
     "200": "#fee39e",
     "300": "#fdd56e",
     "400": "#fcc73d",
-    "500": "#fcb90d",
+    "500": "#ffd117",
     "600": "#c9940a",
     "700": "#976f08",
     "800": "#654a05",
