@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Figma → GitHub → Tailwind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./tailwind.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="p-8">
+      <h1 class="text-4xl font-bold mb-2">Figma &amp; Tailwind</h1>
+      <p class="text-xl mb-4">GitHub에 저장된 토큰(token)을 Style Dictionary를 사용해 Tailwind CSS로 트리거 하는 예입니다.</p>
+      <button class="p-2 font-bold bg-primary-600 text-primary-100" id="switch" onclick="toggleTheme()">스위치</button>
+    </div>
+
+    <script>
+      function setTheme(name) {
+        localStorage.setItem("theme", name);
+        document.documentElement.className = name;
+      }
+
+      function toggleTheme() {
+        if (localStorage.getItem("theme") === "dark-theme") {
+          setTheme("light-theme");
+        } else {
+          setTheme("dark-theme");
+        }
+      }
+
+      setTheme(localStorage.getItem("theme"));
+    </script>
+  </body>
+
+</html>

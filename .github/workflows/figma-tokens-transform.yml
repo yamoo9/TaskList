@@ -32,12 +32,15 @@ jobs:
       # step 4. 테마 CSS, SCSS, JS 생성(변환)
       - name: Create Theme Resources
         run: npm run theme:create
-      # step 5. 변경사항 커밋
+      # step 5. Tailwind CSS 테마 스타일 생성(변환)
+      - name: Create Tailwind CSS Style File
+        run: npm run build:prod
+      # step 6. 변경사항 커밋
       - name: Commit changes
         # 사용법 참고: https://github.com/EndBug/add-and-commit
         uses: EndBug/add-and-commit@v9
         with:
           author_name: yamoo9
           author_email: yamoo9@naver.com
-          message: 'transform. Theme JSON'
+          message: 'transform. create Theme Files & Tailwind CSS'
           add: '.'

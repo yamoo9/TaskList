@@ -4,19 +4,32 @@
   "description": "TaskList 애플리케이션 디자인 → 개발 워크플로우",
   "private": true,
   "scripts": {
-    "theme:token": "run-p global light dark",
-    "theme:create": "node theme-build.js",
-    "theme:delete": "rimraf -rf theme/css theme/scss theme/js",
-    "theme:delete-all": "rimraf -rf theme",
     "global": "token-transformer data/tokens.json theme/global.json global",
     "light": "token-transformer data/tokens.json theme/light.json global,light global",
-    "dark": "token-transformer data/tokens.json theme/dark.json global,dark global"
+    "dark": "token-transformer data/tokens.json theme/dark.json global,dark global",
+    "theme:token": "run-p global light dark",
+    "theme:create": "node build-theme.js",
+    "theme:tailwind": "node build-tailwind.js",
+    "build:tailwind": "postcss ./tailwind-demo/styles/main.css -o ./tailwind-demo/tailwind.css",
+    "build:dev": "run-s theme:tailwind build:tailwind",
+    "build:prod": "cross-env NODE_ENV=production npm run build:dev",
+    "build:preview": "live-server tailwind-demo --host=localhost --port=3200 --no-browser",
+    "theme:delete": "rimraf -rf theme/css theme/scss theme/js",
+    "theme:delete-all": "rimraf -rf theme"
   },
   "devDependencies": {
+    "autoprefixer": "10.4.8",
+    "cross-env": "7.0.3",
+    "cssnano": "5.1.12",
+    "live-server": "1.2.2",
     "npm-run-all": "4.1.5",
+    "postcss": "8.4.16",
+    "postcss-cli": "10.0.0",
+    "postcss-import": "14.1.0",
     "rimraf": "3.0.2",
     "style-dictionary": "3.7.1",
-    "token-transformer": "0.0.23"
+    "tailwindcss": "3.1.8",
+    "token-transformer": "0.0.24"
   },
   "repository": {
     "type": "git",

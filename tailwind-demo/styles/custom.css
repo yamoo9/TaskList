@@ -1,0 +1,4 @@
+html,
+body {
+  @apply flex bg-bg-default h-full w-full text-fg-default;
+}
