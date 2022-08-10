@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 09 Aug 2022 23:58:00 GMT
+ * Generated on Wed, 10 Aug 2022 00:19:36 GMT
  */
 
 export const Fg100 = "#1a1a1a";
