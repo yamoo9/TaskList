@@ -37,4 +37,14 @@
   --colors-red-700: #880c0c;
   --colors-red-800: #5b0808;
   --colors-red-900: #2d0404;
+  --colors-blue-100: #cde4f4;
+  --colors-blue-200: #9cc8e8;
+  --colors-blue-300: #6aaddd;
+  --colors-blue-400: #3992d2;
+  --colors-blue-500: #0776c7;
+  --colors-blue-600: #065f9f;
+  --colors-blue-700: #044777;
+  --colors-blue-800: #032f4f;
+  --colors-blue-900: #011828;
+  --primary-900: #060811;
 }

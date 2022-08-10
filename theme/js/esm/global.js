@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 Aug 2022 00:19:36 GMT
+ * Generated on Wed, 10 Aug 2022 00:46:39 GMT
  */
 
 export const ColorsWhite = "#ffffff";
@@ -41,3 +41,13 @@ export const ColorsRed600 = "#b51010";
 export const ColorsRed700 = "#880c0c";
 export const ColorsRed800 = "#5b0808";
 export const ColorsRed900 = "#2d0404";
+export const ColorsBlue100 = "#cde4f4";
+export const ColorsBlue200 = "#9cc8e8";
+export const ColorsBlue300 = "#6aaddd";
+export const ColorsBlue400 = "#3992d2";
+export const ColorsBlue500 = "#0776c7";
+export const ColorsBlue600 = "#065f9f";
+export const ColorsBlue700 = "#044777";
+export const ColorsBlue800 = "#032f4f";
+export const ColorsBlue900 = "#011828";
+export const Primary900 = "#060811";
