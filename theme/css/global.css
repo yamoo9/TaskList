@@ -46,5 +46,14 @@
   --colors-blue-700: #044777;
   --colors-blue-800: #032f4f;
   --colors-blue-900: #011828;
+  --colors-purple-100: #dbd2f4;
+  --colors-purple-200: #b7a5ea;
+  --colors-purple-300: #9378df;
+  --colors-purple-400: #6f4bd5;
+  --colors-purple-500: #4b1eca;
+  --colors-purple-600: #3c18a1;
+  --colors-purple-700: #2d1279;
+  --colors-purple-800: #1e0c51;
+  --colors-purple-900: #0f0628;
   --primary-900: #060811;
 }

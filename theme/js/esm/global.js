@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 13 Aug 2022 08:44:09 GMT
+ * Generated on Fri, 26 Aug 2022 07:37:23 GMT
  */
 
 export const ColorsWhite = "#ffffff";
@@ -50,4 +50,13 @@ export const ColorsBlue600 = "#065f9f";
 export const ColorsBlue700 = "#044777";
 export const ColorsBlue800 = "#032f4f";
 export const ColorsBlue900 = "#011828";
+export const ColorsPurple100 = "#dbd2f4";
+export const ColorsPurple200 = "#b7a5ea";
+export const ColorsPurple300 = "#9378df";
+export const ColorsPurple400 = "#6f4bd5";
+export const ColorsPurple500 = "#4b1eca";
+export const ColorsPurple600 = "#3c18a1";
+export const ColorsPurple700 = "#2d1279";
+export const ColorsPurple800 = "#1e0c51";
+export const ColorsPurple900 = "#0f0628";
 export const Primary900 = "#060811";
